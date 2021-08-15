@@ -4,4 +4,4 @@ To run app:
 
 ## Server: npm run dev
 
-## Client: npm starr 
+## Client: npm start
