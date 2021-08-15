@@ -1,0 +1,7 @@
+<app-header></app-header>
+
+<ng-template #moviesList>
+  <app-movies-list></app-movies-list>
+</ng-template>
+
+<p *ngIf="isMoviesLoading$ | async; else moviesList" class="is-loading">Loading...</p>

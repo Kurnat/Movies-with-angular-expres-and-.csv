@@ -1,0 +1,30 @@
+.movie-card{
+  max-width: 300px;
+  margin: 1rem .5rem;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.img-wrapp{
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    display: block;
+    height: 200px;
+    width: 100%;
+    box-shadow: inset 0px -157px 47px -37px rgba(0,0,0,0.79);
+  }
+}
+
+.img-title{
+  position: absolute;
+  padding: .5rem;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  color: aliceblue;
+  z-index: 2;
+}

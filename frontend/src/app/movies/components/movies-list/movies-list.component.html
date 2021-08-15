@@ -1,0 +1,10 @@
+<div class="wrapper">
+
+  <ng-template #movies>
+    <ng-container *ngFor="let movie of movies$ | async" >
+      <app-movie [movie]="movie"></app-movie>
+    </ng-container>
+  </ng-template>
+
+  <p *ngIf="!(movies$ | async)?.length; else movies" class="no-movies">No Movies</p>
+</div>
